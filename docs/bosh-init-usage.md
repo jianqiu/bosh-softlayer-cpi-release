@@ -181,7 +181,7 @@ cloud_provider:
           options:
             blobstore_path: /var/vcap/micro_bosh/data/cache
 ```
-3. Prepare a new bosh-agent and stemcell for eCPI
+2. Prepare a new bosh-agent and stemcell for eCPI
    please use the version of http://github.com/mattcui/bosh-agent bm_beta branch in softlayer stemcell
    agent.json should be as follows in softlayer stemcell
 
@@ -209,13 +209,13 @@ cloud_provider:
 ```
  create a directory /var/vcap/bosh/micro_bosh in stemcell for local blobstore of bosh-agent
 
-4. Set deployment
+3. Set deployment
 
 ```
 bosh-init deployment bosh.yml
 ```
 
-5. Kick off a deploy
+4. Kick off a deploy
 
 ```
 bosh-init deploy bosh.yml
