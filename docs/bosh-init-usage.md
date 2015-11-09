@@ -209,13 +209,7 @@ cloud_provider:
 ```
  create a directory /var/vcap/bosh/micro_bosh in stemcell for local blobstore of bosh-agent
 
-4. Set deployment
-
-```
-bosh-init deployment bosh.yml
-```
-
-5. Kick off a deploy
+4. Kick off a deploy
 
 ```
 bosh-init deploy bosh.yml
